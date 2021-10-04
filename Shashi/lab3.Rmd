@@ -248,7 +248,7 @@ q_learning <- function(start_state, epsilon = 0.5, alpha = 0.1, gamma = 0.95,
       
     } else {
       
-      action <- GreedyPolicy(current_state[1], current_state[2], epsilon)
+      action <- GreedyPolicy(current_state[1], current_state[2])
     }
     
     # execute action
